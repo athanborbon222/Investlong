@@ -1,3 +1,4 @@
+/* font awesome */
 .fa-brands{
     color: blue;
     font-size: xx-large;
@@ -9,4 +10,21 @@
 
 .fa-solid{
     color: white;
+}
+/* end css font awesome */
+
+
+/* footer */
+.footer{
+    background-color: rgb(14, 8, 8);
+    color: white;
+}
+.logo_footer img{
+    width: 100px;
+    margin: 10px;
+}
+
+
+.trend-cards{
+    box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
 }

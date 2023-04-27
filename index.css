@@ -23,8 +23,24 @@
     width: 100px;
     margin: 10px;
 }
+/* end of footer */
 
 
+
+/*trending Stories*/
 .trend-cards{
+    box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
+}
+/* end of trending stories */
+
+
+/* U.S markets */
+
+.markets-container{
+    box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
+}
+
+
+.markert-cards{
     box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
 }

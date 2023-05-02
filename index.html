@@ -13,11 +13,11 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-        <div class="container-fluid">
-            <div class="d-flex flex-row justify-content-evenly flex-wrap    ">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top p-0">
+        <div class="container-fluid p-0">
+            <div class="d-flex flex-row justify-content-evenly">
                 <div>
-                    <a class="navbar-brand text-warning p-5 mt-5 text-light" href="index.html">
+                    <a class="navbar-brand text-warning p-3 mt-5 text-light" href="index.html">
                         <img src="image/investlong_img.jpg" class="img-fluid  img-thumbnail mt-3 mx-2"
                             style="width: 100px;">Investlong
                     </a>
@@ -35,7 +35,7 @@
                 <!-- nav-link -->
                 <div>
                     <div class="navbar-collapse" id="navbarExample">
-                        <ul class="navbar-nav p-5">
+                        <ul class="navbar-nav p-5 d-flex flex-row">
                             <li class="nav-item">
                                 <a class="nav-link  text-light active rounded" href="#">Tools</a>
                             </li>
@@ -57,15 +57,15 @@
                 </div>
                 <!--end of nav-link -->
                 <div>
-                    <div class="nav-button p-5">
+                    <div class="nav-button p-5 d-flex flex-row">
 
-                        <button class=" btn btn-warning py-2 px-4 mx-1">Pro</button>
+                        <a class=" text-light py-3 px-4 mx-1 pro_btn">Pro</a>
 
-                        <button class="btn btn-danger py-2 px-4 mx-1">Subscribe</button>
+                        <a class="text-light  py-3 px-4 mx-1 subscribe_btn">Subscribe</a>
 
-                        <button class="btn btn-dark btn-outline-light text-light py-2 px-4 mx-1">Login</button>
+                        <a class="text-light py-3 px-4 mx-1 login_btn">Login</a>
 
-                        <button class="btn btn-primary py-2 px-4 mx-1">Register</button>
+                        <a class="text-light py-3 px-4 mx-1 register_btn">Register</a>
 
 
 
@@ -304,14 +304,6 @@
 
 
 
-
-
-
-    <!-- Events -->
-    <div class="container-fluid"></div>
-    <!-- End of Events Section -->
-
-
 <!-- US Markets -->
 
 
@@ -446,8 +438,190 @@
 
    
 
+<!-- Events section -->
 
+<div class="container-fluid">
+    <h2 class="event-header d-flex justify-content-center p-3 mx-2">Events</h2>
+    <div class="d-flex flex-row justify-content-center">
+        <a href="#" class="px-3 py-3 mx-1 my-3 text-center text-dark  event-button"><h4>All Events</h4></a>
+        <a href="#" class="px-3 py-3 mx-1 my-3 text-center text-dark  event-button"><h4>Earning</h4></a>
+        <a href="#" class="px-3 py-3 mx-1 my-3 text-center text-dark  event-button"><h4>Stock Split</h4></a>
+        <a href="#" class="px-3 py-3 mx-1 my-3 text-center text-dark  event-button"><h4>Economic Events</h4></a>
+    </div>
 
+    <div class="container-fluid">
+        <h2 class="p-5 mx-5">Events Calendar for: April 10, 2023 to April 16, 2023</h2>
+        <div class="d-flex flex-row justify-content-evenly">
+
+            <!-- carousel for events -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                  <div class="carousel-item active d-flex  justify-content-evenly">
+                    <!-- event cards page 1-->
+                   
+               
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly align-items-center">
+                            <h4>10</h4>
+                            <h3>April</h3>
+                            <h4>Mon</h4>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly">
+                            <h4>11</h4>
+                            <h3>April</h3>
+                            <h5>Tue</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly">
+                            <h4>12</h4>
+                            <h3>April</h3>
+                            <h5>Wed</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly">
+                            <h4>13</h4>
+                            <h3>April</h3>
+                            <h5>Thu</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly">
+                            <h4>14</h4>
+                            <h3>April</h3>
+                            <h5>Fri</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly">
+                            <h4>15</h4>
+                            <h3>April</h3>
+                            <h5>Sat</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+                    <div class="card event-cards mx-1">
+                        <div class="card-header d-flex justify-content-evenly">
+                            <h4>16</h4>
+                            <h3>April</h3>
+                            <h5>Sun</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>Event 1</h4>
+                            <h4>Event 2</h4>
+                            <h4>Event 3</h4>
+                        </div>
+                    </div>
+             
+                    <!-- end of page 1 event cards -->
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- end of carousel events -->
+
+        </div>
+    </div>
+
+                <div class="container-fluid Economic_Event_Section p-5 my-5">
+                    <div class="d-flex flex-row flex-wrap">
+                        <div class="col-md-12">
+                            <h5>Economic Events on Sunday, April 16</h5>
+                            <table class="table table-striped table-bordered table-hover table-condensed table-light text-center">
+                                <tr>
+                                    <td class="px-5">Event</td>
+                                    <td class="px-5">Country</td>
+                                    <td class="px-5">Event Time</td>
+                                    <td class="px-5">For</td>
+                                    <td class="px-5">Actual</td>
+                                    <td class="px-5">Market Expectation</td>
+                                    <td class="px-5">Prior to This</td>
+                                    <td class="px-5">Revised From</td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td class="px-5">GDP*</td>
+                                    <td class="px-5">IL</td>
+                                    <td class="px-5">10:00AM GMT</td>
+                                    <td class="px-5">Q4</td>
+                                    <td class="px-5">5.3</td>
+                                    <td class="px-5">-</td>
+                                    <td class="px-5">5.6</td>
+                                    <td class="px-5">-</td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td class="px-5">Food Price Index</td>
+                                    <td class="px-5">NZ</td>
+                                    <td class="px-5">10:45PM GMT</td>
+                                    <td class="px-5">March</td>
+                                    <td class="px-5">0.8</td>
+                                    <td class="px-5">-</td>
+                                    <td class="px-5">1.5</td>
+                                    <td class="px-5">-</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="px-5">CPI MM*</td>
+                                    <td class="px-5">AE</td>
+                                    <td class="px-5">12:00AM GMT</td>
+                                    <td class="px-5">Jan</td>
+                                    <td class="px-5">-</td>
+                                    <td class="px-5">-</td>
+                                    <td class="px-5">0.2</td>
+                                    <td class="px-5">-</td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+<!-- End of event section -->
 
 
 

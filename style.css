@@ -6,7 +6,7 @@
             width: 250px;
             position: fixed;
             z-index: 1;
-            top: 180px;
+            top: 90px;
             left: 10px;
             background: #eee;
             overflow-x: hidden;
@@ -23,7 +23,7 @@
         }
 
         .sidenav a:hover {
-            color: #064579;
+            color: #FF7200;
         }
 
         .main {

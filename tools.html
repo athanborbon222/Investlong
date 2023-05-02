@@ -14,88 +14,67 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="d-flex flex-row justify-content-evenly flex-wrap    ">
-                <div>
-                    <a class="navbar-brand text-warning p-1 mt-1 text-light" href="index.html">
-                        <img src="image/investlong_img.jpg" class="img-fluid  img-thumbnail mt-3 mx-2"
-                            style="width: 50px;">Investlong
-                    </a>
-
-                </div>
-
-                <div>
-                    <div class="input-group p-1">
-                        <label class="input-group-text bg-dark"><i
-                                class="btn fa-solid fa-magnifying-glass text-white"></i></label>
-                        <input type="text" class="form-control bg-dark text-light" style="width: 200px;">
-
-                    </div>
-                </div>
-                <!-- nav-link -->
-                <div>
-                    <div class="navbar-collapse" id="navbarExample">
-                        <ul class="navbar-nav p-1">
-                            <li class="nav-item">
-                                <a class="nav-link  text-light active rounded" href="#">Tools</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light rounded" href="#">Watch list</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light rounded" href="#">Report Bug</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light rounded" href="#">Support</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light rounded" href="#">Community</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <!--end of nav-link -->
-                <div>
-                    <div class="nav-button p-1">
-
-                        <button class=" btn btn-warning py-2 px-4 mx-1">Pro</button>
-
-                        <button class="btn btn-danger py-2 px-4 mx-1">Subscribe</button>
-
-                        <button class="btn btn-dark btn-outline-light text-light py-2 px-4 mx-1">Login</button>
-
-                        <button class="btn btn-primary py-2 px-4 mx-1">Register</button>
-                    </div>
-                </div>
-
-            </div>
+            <a class="navbar-brand" href="#">
+                <img src="image/investlong_img.jpg" alt="" width="45" height="45"
+                    class="d-inline-block align-text-center rounded-1">
+                Investlong
+            </a>
         </div>
+        <div class="input-group">
+            <label class="input-group-text bg-dark"><i class="btn fa-solid fa-magnifying-glass text-white"></i></label>
+            <input type="text" class="form-control bg-dark text-light">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watch_list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Report_Bug</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Community</a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-warning me-2" type="button">Pro</button>
+        <button class="btn btn-danger me-2" type="button">Subscribe</button>
+        <button class="btn btn-outline-light me-2" type="button">Login</button>
+        <button class="btn btn-primary me-2" type="button">Register</button>
     </nav>
     <!-- end of navbar -->
 
     <!-- social media icon -->
-
     <div class="container-fluid p-1 mt-1">
         <div class="d-flex flex-row-reverse">
 
-
             <a href="https://www.facebook.com/jonathan.borbon222/">
-                <i class="fa-brands fa-facebook rounded-circle p-5 mt-5"> </i>
+                <i class="fa-brands fa-facebook rounded-circle m-1"> </i>
             </a>
 
             <a href="https://twitter.com/home">
-                <i class="fa-brands fa-twitter-square  p-5 mt-5"> </i>
+                <i class="fa-brands fa-twitter-square  m-1"> </i>
             </a>
 
             <a href="https://www.linkedin.com/in/jonathan-b-3086521a5/">
-                <i class="fa-brands fa-linkedin  p-5 mt-5"> </i>
+                <i class="fa-brands fa-linkedin  m-1"> </i>
             </a>
-            <h2 class="p-5 mt-5 text-dark">Share</h2>
+            <h2 class="text-dark m-1">Share</h2>
         </div>
     </div>
-
     <!--end of social media icon-->
 
     <div class="sidenav">
@@ -278,7 +257,7 @@
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                                 <div class="col-2">
                                     <picture class="w-30 me-1 p-1">
-                                        <img src="image/moneyexpert.jpg" class="img-fluid rounded w-30"
+                                        <img src="image/moneyexpert.jpg" class="img-fluid rounded w-28"
                                             alt="image desc">
                                     </picture>
                                 </div>
@@ -309,39 +288,64 @@
                 <!-- <figcaption class="figure-caption text-center">Visible text.</figcaption> -->
             </picture>
 
-            <p>Fugiat consequat aliquip amet deserunt eu aute consequat. Aliquip do deserunt elit
+            <p class="mt-4 ms-3"> <strong>Fugiat consequat</strong> aliquip amet deserunt eu aute consequat. Aliquip do
+                deserunt elit
                 tempor sit
                 exercitation do amet excepteur commodo fugiat qui dolore. Cillum consectetur tempor ad proident
                 voluptate culpa ipsum. Proident reprehenderit reprehenderit sunt ex mollit cupidatat est ad officia
                 sit. Sunt ut consectetur ipsum mollit aute ad occaecat aliquip laborum.
-
+                <br>
                 Dolore commodo adipisicing consectetur ex magna et tempor qui sint cupidatat nisi laboris officia.
                 Eiusmod mollit velit irure eiusmod occaecat pariatur. Occaecat aliquip aliquip ea excepteur nisi.
                 Veniam esse excepteur et laboris fugiat laborum pariatur dolor Lorem sint in occaecat magna. Fugiat
                 in magna nulla nisi ad. Sit consequat aliqua incididunt eu aliquip. Duis cillum ullamco sunt
                 adipisicing id ad cupidatat consequat ex esse id non.
-
+                <br>
                 Aute deserunt excepteur deserunt sunt reprehenderit sunt eiusmod. Officia aute eiusmod nulla quis
                 fugiat duis velit non anim dolore commodo. Adipisicing duis adipisicing ipsum eu enim consectetur in
                 sunt do non commodo. Labore nostrud excepteur consectetur culpa sit dolore ad. Amet ad sunt enim eu
                 irure. Veniam eu dolore ullamco sint sunt nulla do reprehenderit.
-
+                <br>
                 Est cupidatat anim eu fugiat laborum pariatur. Sit veniam pariatur labore officia ex quis. Ad mollit
                 fugiat minim ad minim exercitation do aliquip id sunt mollit ad veniam magna. Elit mollit officia
                 voluptate labore id proident sit ut aliquip. Id commodo exercitation labore pariatur culpa aute
                 deserunt mollit mollit dolore anim ipsum dolore.
-
+                <br>
                 Eiusmod velit labore est voluptate duis laboris cupidatat aliqua. Proident sit in pariatur ad
                 officia voluptate enim aute. Consectetur laboris adipisicing voluptate cillum proident esse ea ea
                 tempor enim. Elit laborum consectetur exercitation ea irure consequat est cupidatat officia.
-
+                <br>
+                Magna exercitation nulla deserunt fugiat non cillum consequat. Anim ea laborum aliquip sint irure
+                mollit reprehenderit pariatur. Consequat dolore mollit voluptate in sunt sunt excepteur do magna
+                esse.
+                exercitation do amet excepteur commodo fugiat qui dolore. Cillum consectetur tempor ad proident
+                voluptate culpa ipsum. Proident reprehenderit reprehenderit sunt ex mollit cupidatat est ad officia
+                sit. Sunt ut consectetur ipsum mollit aute ad occaecat aliquip laborum.
+                <br>
+                Dolore commodo adipisicing consectetur ex magna et tempor qui sint cupidatat nisi laboris officia.
+                Eiusmod mollit velit irure eiusmod occaecat pariatur. Occaecat aliquip aliquip ea excepteur nisi.
+                Veniam esse excepteur et laboris fugiat laborum pariatur dolor Lorem sint in occaecat magna. Fugiat
+                in magna nulla nisi ad. Sit consequat aliqua incididunt eu aliquip. Duis cillum ullamco sunt
+                adipisicing id ad cupidatat consequat ex esse id non.
+                <br>
+                Aute deserunt excepteur deserunt sunt reprehenderit sunt eiusmod. Officia aute eiusmod nulla quis
+                fugiat duis velit non anim dolore commodo. Adipisicing duis adipisicing ipsum eu enim consectetur in
+                sunt do non commodo. Labore nostrud excepteur consectetur culpa sit dolore ad. Amet ad sunt enim eu
+                irure. Veniam eu dolore ullamco sint sunt nulla do reprehenderit.
+                <br>
+                Est cupidatat anim eu fugiat laborum pariatur. Sit veniam pariatur labore officia ex quis. Ad mollit
+                fugiat minim ad minim exercitation do aliquip id sunt mollit ad veniam magna. Elit mollit officia
+                voluptate labore id proident sit ut aliquip. Id commodo exercitation labore pariatur culpa aute
+                deserunt mollit mollit dolore anim ipsum dolore.
+                <br>
+                Eiusmod velit labore est voluptate duis laboris cupidatat aliqua. Proident sit in pariatur ad
+                officia voluptate enim aute. Consectetur laboris adipisicing voluptate cillum proident esse ea ea
+                tempor enim. Elit laborum consectetur exercitation ea irure consequat est cupidatat officia.
+                <br>
                 Magna exercitation nulla deserunt fugiat non cillum consequat. Anim ea laborum aliquip sint irure
                 mollit reprehenderit pariatur. Consequat dolore mollit voluptate in sunt sunt excepteur do magna
                 esse.</p>
         </div>
-
-
-
 
 
 

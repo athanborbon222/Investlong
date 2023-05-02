@@ -14,6 +14,44 @@
 /* end css font awesome */
 
 
+
+/* navbar css */
+
+ .subscribe_btn{
+    background-color: orange;
+
+    border-radius: 10px 10px;   
+    
+    text-decoration: none;
+}
+
+.pro_btn{
+    background-color: rgb(240, 210, 39);
+
+    border-radius: 10px 10px; 
+
+    text-decoration: none;
+}
+
+.login_btn{
+    background-color: black;
+
+    border-radius:10px 10px; 
+
+
+    text-decoration: none;
+}
+
+.register_btn{
+    background-color: rgb(34, 139, 245);
+
+    border-radius:10px 10px; 
+
+    text-decoration: none;
+}
+/* end of navbar css */
+
+
 /* footer */
 .footer{
     background-color: rgb(14, 8, 8);
@@ -31,7 +69,7 @@
 .trend-cards{
     box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
 
-    
+
 }
 /* end of trending stories */
 
@@ -45,4 +83,49 @@
 
 .markert-cards{
     box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
+}
+/* end of U.S market CSS */
+
+
+
+/* Event Section CSS */
+.event-header{
+    box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
+}
+
+.event-button{
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px rgb(120, 119, 119);
+
+    
+
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.event-cards{
+    width: 220px;
+    box-shadow: 0px 0px 2px 1px rgb(120, 119, 119);
+}
+
+
+.carousel-control-next-icon{
+    background-color: black;
+    color: black;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+    color: black;
+}
+
+
+.Economic_Event_Section{
+    background-color: white;
+
+    box-shadow: 0px 0px 2px 1px rgb(120, 119, 119);
 }

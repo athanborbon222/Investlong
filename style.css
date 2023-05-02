@@ -7,18 +7,26 @@
             position: fixed;
             z-index: 1;
             top: 90px;
-            left: 10px;
-            background: #eee;
+            background: #ffffff;
+            opacity: 50;
             overflow-x: hidden;
             padding: 8px 0;
        
         }
 
+        .sidenavleft {
+            left: 10px;
+        }
+
+        .sidenavright {
+            right: 10px;
+        }
+
         .sidenav a {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
-            font-size: 21px;
-            color: #2196F3;
+            font-size: 18px;
+            color: #4D5557;
             display: block;
         }
 
@@ -34,6 +42,11 @@
             padding: 0px 10px;
         }
 
+        .bg-gray {
+            background-color: #333333;
+        }
+        
+
         @media screen and (max-height: 450px) {
             .sidenav {
                 padding-top: 15px;
@@ -43,3 +56,4 @@
                 font-size: 18px;
             }
         }
+

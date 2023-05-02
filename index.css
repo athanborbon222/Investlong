@@ -54,11 +54,11 @@
 
 /* footer */
 .footer{
-    background-color: rgb(14, 8, 8);
+    background-color: #333333;
     color: white;
 }
 .logo_footer img{
-    width: 100px;
+    width: 34px;
     margin: 10px;
 }
 /* end of footer */

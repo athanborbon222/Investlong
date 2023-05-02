@@ -12,10 +12,10 @@
     <title>Tools</title>
 </head>
 
-<body>
+<body class="bg-light">
     <!--navbar-->
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-gray">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="image/investlong_img.jpg" alt="" width="45" height="45"
@@ -58,7 +58,7 @@
     <!-- end of navbar -->
 
     <!-- social media icon -->
-    <div class="container-fluid p-1 mt-1">
+    <!-- <div class="container-fluid p-1 mt-1">
         <div class="d-flex flex-row-reverse">
 
             <a href="https://www.facebook.com/jonathan.borbon222/">
@@ -74,19 +74,51 @@
             </a>
             <h2 class="text-dark m-1">Share</h2>
         </div>
-    </div>
+    </div> -->
     <!--end of social media icon-->
 
-    <div class="sidenav">
-        <a href="#calculator">Calculator</a>
-        <a href="#compareaccount">Compare Account</a>
-        <a href="#helpfulguides">Helpful Guides</a>
-        <a href="#learnmore">Learn More</a>
-        <a href="#investingadvice">Investing Advice</a>
+    <div class="sidenav sidenavleft">
+        <a class="shadow-sm mb-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="collapseExample">Calculator</a>
+
+        <div class="collapse" id="collapseExample">
+            <nav class="nav flex-column ms-4">
+                <a class="nav-link active" aria-current="page" href="#">Investment</a>
+                <a class="nav-link" href="#">Asset Allocation</a>
+                <a class="nav-link" href="#">Capital Gain Tax</a>
+                <a class="nav-link" href="#">Inflation</a>
+            </nav>
+        </div>
+        <a class="shadow-sm mb-1" href="#calculator">Compare Account</a>
+        <a class="shadow-sm mb-1" href="#helpfulguides">Helpful Guides</a>
+        <a class="shadow-sm mb-1" href="#learnmore">Learn More</a>
+        <a class="shadow-sm mb-1" href="#investingadvice">Investing Advice</a>
+    </div>
+
+    <div class="sidenav sidenavright">
+        <div class="d-flex flex-row">
+            <h3>Share</h3>
+            <a href="" class="text-primary me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-primary me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-primary me-4">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <a href="#compareaccount">More Article</a>
+        <nav class="nav flex-column ms-4">
+            <a class="nav-link" href="#">How much will your 401 be worth</a>
+            <a class="nav-link" href="#">Occaecat anim culpa sit dolore id enim quis esse.</a>
+            <a class="nav-link" href="#">Voluptate ea velit enim tempor nostrud cupidatat non.</a>
+            <a class="nav-link" href="#">Sunt in voluptate elit velit sit esse.</a>
+        </nav>
     </div>
 
     <main>
-        <div class="container">
+        <div class="container bg-white p-2">
             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
 
                 <div class="col-2">
@@ -256,24 +288,24 @@
                         <div class="card card-body">
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                                 <div class="col-2">
-                                    <picture class="w-30 me-1 p-1">
-                                        <img src="image/moneyexpert.jpg" class="img-fluid rounded w-28"
-                                            alt="image desc">
-                                    </picture>
+                                    <img src="image/moneyexpert.jpg" class="img-fluid rounded-top" alt="">
                                 </div>
-                                <div class="col-8">
-                                    <p> Laborum est sit commodo ad amet laborum nulla laborum sint consectetur occaecat
-                                        proident
-                                        qui.
-                                        Cupidatat sit eu laborum exercitation incididunt et cupidatat exercitation
-                                        aliqua
-                                        elit
-                                        tempor.
-                                        Et tempor aliqua esse minim aute culpa. Cupidatat dolore irure est magna quis.
-                                        Elit
-                                        occaecat
-                                        veniam in quis do reprehenderit qui.
-                                    </p>
+                                <div class="col-10 align-self-center">
+                                    <p> <strong>Dave Pisum</strong> dolor sit amet consectetur adipisicing elit.
+                                        Laudantium quos veniam
+                                        eaque amet minima quae eius sapiente. Iusto delectus eos aliquid recusandae
+                                        <br>
+                                        assumenda, in, animi placeat a, dignissimos mollitia accusantium.Ex nostrud
+                                        minim dolor officia eu veniam ea fugiat laboris labore deserunt quis dolor.
+                                        Aliquip ad laborum occaecat ex laboris labore cupidatat nostrud velit fugiat
+                                        aliquip sit amet. Anim aliquip ad tempor proident est sit ex qui aliquip tempor
+                                        sint pariatur deserunt minim. Esse ea ut et esse labore laborum nulla eiusmod.
+                                        <br>
+                                        Ut mollit et elit magna dolor ipsum. Est fugiat aliqua irure qui enim. Eu
+                                        pariatur cupidatat nulla non proident dolor in mollit amet laboris mollit irure.
+                                        Aute sint culpa amet reprehenderit id exercitation labore culpa aute
+                                        exercitation id pariatur laboris. Anim fugiat culpa nostrud nostrud veniam nisi
+                                        cupidatat non aliquip.</p>
                                 </div>
                             </div>
                         </div>
@@ -281,7 +313,7 @@
                 </div>
             </div>
 
-            <h1>Investment Calculator</h1>
+            <h1 class="mt-3">Investment Calculator</h1>
 
             <picture class="w-50 float-start mt-0 p-3">
                 <img src="image/building.jpg" class="img-fluid rounded w-100">
@@ -347,14 +379,72 @@
                 esse.</p>
         </div>
 
-
-
+        <div class=" footer py-3 ">
+            <div class="container-fluid">
+                <div class="d-flex flex-row justify-content-evenly align-items-center flex-wrap">
+                    <div class="Investment_link p-2">Investment</div>
+                    <div class="Investment_link p-2">Watch List</div>
+                    <div class="Investment_link p-2">Support</div>
+                    <div class="logo_footer p-1">
+                        <img src="image/investlong_img.jpg" class="img-fluid img-thumbnail"> Investlong
+                    </div>
+                    <div class="Investment_link p-2">Community</div>
+                    <div class="Investment_link p-2">Articles</div>
+                    <div class="Investment_link p-2">Resources</div>
+                </div>
+                <hr style="color: #FF7200">
+            </div>
+            <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                            distinctio earum repellat quaerat voluptatibus placeat nam,
+                            commodi optio pariatur est quia magnam eum harum corrupti
+                            dicta, aliquam sequi voluptate quas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+            <!-- Section: Social -->
+            <section class="text-center mb-5">
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social -->
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2023 Copyright:
+                <a class="text-white" href="#">Investlong</a>
+            </div>
+            <!-- Copyright -->
+        </div>
+        <!-- End of footer -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+        <script src="https://kit.fontawesome.com/92ec45c925.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-</script>
 
 </html>

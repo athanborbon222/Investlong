@@ -15,41 +15,6 @@
 
 
 
-/* navbar css */
-
- .subscribe_btn{
-    background-color: orange;
-
-    border-radius: 10px 10px;   
-    
-    text-decoration: none;
-}
-
-.pro_btn{
-    background-color: rgb(240, 210, 39);
-
-    border-radius: 10px 10px; 
-
-    text-decoration: none;
-}
-
-.login_btn{
-    background-color: black;
-
-    border-radius:10px 10px; 
-
-
-    text-decoration: none;
-}
-
-.register_btn{
-    background-color: rgb(34, 139, 245);
-
-    border-radius:10px 10px; 
-
-    text-decoration: none;
-}
-/* end of navbar css */
 
 
 /* footer */
@@ -129,3 +94,64 @@
 
     box-shadow: 0px 0px 2px 1px rgb(120, 119, 119);
 }
+
+/* End of event css Codes */
+.contributor-header{
+    box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
+}
+
+.contributors-card{
+    box-shadow: 0px 0px 2px 1px rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contributors-btn{
+    text-decoration: none;
+    font-weight: bolder;
+
+    background-color: white;
+    color: black;
+
+    margin: auto;
+    margin-block-start: auto;
+
+    border: 1px solid rgb(255, 140, 0);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+
+.contributors-btn:hover{
+    text-decoration: none;
+
+    background-color: rgb(255, 140, 0);
+    color: white;
+
+    margin: auto;
+    margin-block-start: auto;
+
+    border: 1px solid whitesmoke;
+}
+
+
+
+.category-links{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(188, 178, 178)    ;
+
+    border: 1px solid rgb(144, 142, 142);
+   
+}
+
+.category-links:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+    border: 1px solid  rgb(240, 240, 240);
+   
+}
+/* Contributors Section CSS */
+

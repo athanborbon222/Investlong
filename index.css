@@ -16,6 +16,19 @@
 
 
 
+/* navbar css */
+.btn_subscribe{
+    background-color: rgb(255, 140, 0);
+    color: white;
+
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+
+
+    text-decoration: none;
+}
+/* end of navbar css */
+
 
 /* footer */
 .footer{
@@ -117,13 +130,62 @@
 }
 
 
+.event_1{
+    background-color: gray;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+
+.event_2{
+    background-color: rgb(30, 29, 29);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.event_3{
+    background-color: rgb(255, 140, 0);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+
+
 .Economic_Event_Section{
     background-color: white;
 
     box-shadow: 0px 0px 2px 1px rgb(120, 119, 119);
 }
 
+
+
+
+.data_disclaimer_link, .help_link, .suggestion_link{
+    text-decoration: none;
+    
+    color: #9d9595;
+}
+
+.fa-footer{
+    text-decoration: none;
+    
+    color: #9d9595;
+}
+
 /* End of event css Codes */
+
+
+
+
+
+
+
+
+
+
 .contributor-header{
     box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
 }

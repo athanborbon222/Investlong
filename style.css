@@ -216,16 +216,29 @@ body {
 	background-color: #EDEDED;
 }
 
-.bg-dark {
-	background-color: #333333;
+/* Color scheme */
+.bg-ghostgray {
+	background-color: #C2C2C2;
 }
 
 .bg-gray {
 	background-color: #333333;
 }
 
-.bg-ghostgray {
-	background-color: #C2C2C2;
+.bg-darkbrown {
+	background-color: #1D1314;
+}
+
+.bg-brown {
+	background-color: #3C2827;
+}
+
+.bg-orange {
+	background-color: #FF7200;
+}
+
+.bg-dirtywhite {
+	background-color: #EDEDED;
 }
 
 .btn-danger {
@@ -236,6 +249,7 @@ body {
 	background-color: #fec20f;
 }
 
+/* Color scheme */
 .form-control {
 	border: none;
 	border-bottom: 1px solid #c2c2c2;

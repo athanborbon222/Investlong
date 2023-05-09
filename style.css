@@ -9,6 +9,7 @@
 .fa-solid {
 	color: white;
 }
+
 /* end css font awesome */
 
 /* navbar css */
@@ -21,6 +22,7 @@
 
 	text-decoration: none;
 }
+
 /* end of navbar css */
 
 /* footer */
@@ -28,10 +30,12 @@
 	background-color: #333333;
 	color: white;
 }
+
 .logo_footer img {
 	width: 34px;
 	margin: 10px;
 }
+
 /* end of footer */
 
 /*trending Stories*/
@@ -62,6 +66,7 @@
 	padding: 10px 10px 10px 10px;
 	border-radius: 20px;
 }
+
 /* end of trending stories */
 
 /* U.S markets */
@@ -73,6 +78,7 @@
 .markert-cards {
 	box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
 }
+
 /* end of U.S market CSS */
 
 /* Event Section CSS */
@@ -199,17 +205,27 @@
 
 	border: 1px solid rgb(240, 240, 240);
 }
+
 /* Contributors Section CSS */
+.search {
+	width: 25%;
+}
 
 body {
 	font-family: "Lato", sans-serif;
+	background-color: #EDEDED;
 }
 
 .bg-dark {
 	background-color: #333333;
 }
+
 .bg-gray {
 	background-color: #333333;
+}
+
+.bg-ghostgray {
+	background-color: #C2C2C2;
 }
 
 .btn-danger {

@@ -296,23 +296,34 @@
 					],
 					datasets: [
 						{
-							label: "Total Contribution",
+							label: "Starting ammount",
 							backgroundColor: "#855CF8",
+							data: [
+								5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000,
+							],
+							borderWidth: 1,
+						},
+						{
+							label: "Total Contribution",
+							backgroundColor: "#1D1314",
 							data: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
 							borderWidth: 1,
 						},
 						{
-							label: "Total Interest",
-							backgroundColor: "#3C2827",
-							data: [50, 100, 150, 200, 250, 300, 350, 400, 450, 500],
+							label: "Total Interest Earned",
+							backgroundColor: "#FFD1AD",
+							data: [200, 412, 636, 874, 1125, 1390, 1669, 1964, 2275, 2602],
 							borderWidth: 1,
 						},
 					],
 				},
 				options: {
 					scales: {
+						x: {
+							stacked: true,
+						},
 						y: {
-							beginAtZero: true,
+							stacked: true,
 						},
 					},
 				},

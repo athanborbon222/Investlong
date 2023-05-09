@@ -23,7 +23,7 @@
                 Investlong
             </a>
         </div>
-        <div class="input-group">
+        <div class="input-group search">
             <label class="input-group-text bg-gray border-0"><i class="btn fa-solid fa-magnifying-glass text-white"></i></label>
             <input type="text" class="form-control border-bottom bg-gray text-bg-dark bg-opacity-10 text-light">
         </div>
@@ -61,11 +61,11 @@
 
    <!-- Left Side Bar -->
  
-    <div class="sidenav sidenavleft">
+    <div class="sidenav sidenavleft bg-ghostgray">
         <a class="shadow-sm mb-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
             aria-controls="collapseExample">Calculator</a>
 
-        <div class="collapse" id="collapseExample">
+        <div class="collapse bg-ghostgray" id="collapseExample">
             <nav class="nav flex-column ms-4">
                 <a class="nav-link active" aria-current="page" href="#">Investment</a>
                 <a class="nav-link" href="#">Asset Allocation</a>
@@ -81,33 +81,53 @@
 <!-- end of Left Side Bar -->
 <!-- Right Side Bar -->
     <div class="sidenav sidenavright">
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row py-1 px-3">
             <h3>Share</h3>
-            <a href="" class="text-primary me-4">
-                <i class="fab fa-facebook-f"></i>
+            <a href="" class="text-primary ">
+                <i class="fab fa-facebook-f h3"></i>
             </a>
-            <a href="" class="text-primary me-4">
-                <i class="fab fa-instagram"></i>
+            <a href="" class="text-primary ">
+                <i class="fab fa-instagram h3"></i>
             </a>
-            <a href="" class="text-primary me-4">
-                <i class="fab fa-linkedin"></i>
+            <a href="" class="text-primary ">
+                <i class="fab fa-linkedin h3"></i>
             </a>
         </div>
-        <a href="#compareaccount">More Article</a>
-        <nav class="nav flex-column ms-4">
+                <!-- <a class="shadow-sm" data-bs-toggle="collapse" href="#morearticles" role="button" aria-expanded="true"
+            aria-controls="collapseExample">More Articles</a> -->
+
+            <a href="#">More Articles</a>
+
+        <!-- <div class="collapse bg-ghostgray" id="morearticles"> -->
+        <div class="bg-ghostgray">
+            <nav class="nav flex-column ms-4">
             <a class="nav-link" href="#">How much will your 401 be worth</a>
             <a class="nav-link" href="#">Occaecat anim culpa sit dolore id enim quis esse.</a>
             <a class="nav-link" href="#">Voluptate ea velit enim tempor nostrud cupidatat non.</a>
             <a class="nav-link" href="#">Sunt in voluptate elit velit sit esse.</a>
         </nav>
+        </div>
+        <!-- </div> -->
+
+    </div>
+
     </div>
 <!-- Right Side Bar -->
 
 
         <!-- Input groups  -->
-        <div class="container bg-white mt-5">
-            <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} mt-5">
-
+        <div class="container mt-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Main</a></li>
+                    <li class="breadcrumb-item"><a href="#">Calculator</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Investement Calculator</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container bg-white my-3 p-3">
+        
+            <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} ">
                 <div class="col-2">
                     <label for="startingammount" class="form-label">Starting Ammount</label>
                     <input type="currency" class="form-control" id="startingAmmount"
@@ -121,7 +141,7 @@
                     <div id="additionalContributionHelp" class="form-text">Additional Contribution</div>
                 </div>
                 <div class="col-2">
-                    <label for="additionalcontribution" class="form-label">.</label>
+                    <label for="additionalcontribution" class="form-label opacity-0">.</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Open this select menu</option>
                         <option value="1">Weekly</option>
@@ -142,17 +162,41 @@
                     <div id="yearstoGrowHelp" class="form-text">Starting Ammount</div>
                 </div>
             </div>
+            </div>
             
 <!-- end input group -->
+<!-- charts -->
+            
+            <div class="container bg-white shadow-sm">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-8">
+                        <div class="d-flex flex-column p-3">
+                        <div class="p-2"><h4>Investment Growth</h4></div>
+                        <div class="p-2"><canvas id="investmentbarchart"></canvas></div>               
+                    </div>
+                    </div>
+                
+                <div class="col-4">
+                    <div class="d-flex flex-column p-3">
+                        <div class="p-2 "><h4>Investment Balance at Year 2032</h4></div>
+                        <div class="p-2 "><canvas id="investmentpiechart"></canvas></div>                       
+                    </div>
+                </div>
+                </div>
+             </div>
+<!-- end of charts -->
 <!-- Table -->
-            <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} mt-3">
+            <div class="container my-3 bg-white shadow-sm p-5">
+                  
+            <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|} my-3">
 
                 <table class="table table-striped table-hover">
-                    <thead>
+                    <thead class="">
                         <tr>
                             <th scope="col">Year</th>
                             <th scope="col">Starting Amount</th>
                             <th scope="col">Annual Contributions</th>
+                            <th scope="col">Total Contributions</th>
                             <th scope="col">Interest Earned</th>
                             <th scope="col">Total Interest Earned</th>
                             <th scope="col">End Balance</th>
@@ -165,7 +209,7 @@
                             <td>$100</td>
                             <td>$100</td>
                             <td>$200</td>
-                            <td>$200</td>
+                            <td>$20 0</td>
                             <td>$5300</td>
                         </tr>
                         <tr>
@@ -184,103 +228,144 @@
                             <td>$300</td>
                             <td>$224</td>
                             <td>$636</td>
-                            <td>$8936</td>
+                            <td>$5,936</td>
                         </tr>
                         <tr>
                             <th scope="row">2026</th>
                             <td>$5,000</td>
                             <td>$100</td>
-                            <td>$300</td>
-                            <td>$224</td>
-                            <td>$636</td>
-                            <td>$8936</td>
+                            <td>$400</td>
+                            <td>$237</td>
+                            <td>$874</td>
+                            <td>$6,274</td>
                         </tr>
                         <tr>
                             <th scope="row">2027</th>
                             <td>$5,000</td>
                             <td>$100</td>
-                            <td>$300</td>
-                            <td>$224</td>
-                            <td>$636</td>
-                            <td>$8936</td>
+                            <td>$500</td>
+                            <td>$251</td>
+                            <td>$1,125</td>
+                            <td>$6,625</td>
                         </tr>
                         <tr>
                             <th scope="row">2028</th>
                             <td>$5,000</td>
                             <td>$100</td>
-                            <td>$300</td>
-                            <td>$224</td>
-                            <td>$636</td>
-                            <td>$8936</td>
+                            <td>$600</td>
+                            <td>$265</td>
+                            <td>$1,390</td>
+                            <td>$6,990</td>
                         </tr>
                         <tr>
                             <th scope="row">2029</th>
                             <td>$5,000</td>
                             <td>$100</td>
-                            <td>$300</td>
-                            <td>$224</td>
-                            <td>$636</td>
-                            <td>$8936</td>
+                            <td>$700</td>
+                            <td>$280</td>
+                            <td>$1,669</td>
+                            <td>$7,369</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2030</th>
+                            <td>$5,000</td>
+                            <td>$100</td>
+                            <td>$800</td>
+                            <td>$295</td>
+                            <td>$1,964</td>
+                            <td>$7,764</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2031</th>
+                            <td>$5,000</td>
+                            <td>$100</td>
+                            <td>$900</td>
+                            <td>$311</td>
+                            <td>$2,275</td>
+                            <td>$8,175</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2032</th>
+                            <td>$5,000</td>
+                            <td>$100</td>
+                            <td>$1,000</td>
+                            <td>$327</td>
+                            <td>$2,602</td>
+                            <td>$8,602</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            </div>
 <!-- end of table -->
 <!-- accordion Section -->
- <section class="p4 bg-white mt-5">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+<section>
+    <div class="container bg-white my-3 shadow-sm">
+    <div class="accordion accordion-flush" id="Aboutthisreport">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aboutthisanswer" aria-expanded="false" aria-controls="flush-collapseOne">
                    <p class="lead">
                        About This Answer
                    </p> 
                 </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="aboutthisanswer" class="accordion-collapse collapse" data-bs-parent="#Aboutthisreport">
                 <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nesciunt eius sed architecto, ipsam, voluptatibus vitae, eaque minima aut dignissimos veniam voluptas repellendus perferendis. Ipsam aperiam ratione nemo sunt sed!</div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ourassumption" aria-expanded="false" aria-controls="flush-collapseTwo">
                    <p class="lead">
                         Our Assumption
                    </p>
                 </button>
                 </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="ourassumption" class="accordion-collapse collapse" data-bs-parent="#Aboutthisreport">
                 <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, impedit perferendis eaque accusantium facilis ullam quasi! Accusantium, reprehenderit incidunt quibusdam saepe architecto est quas vitae voluptatem sequi harum laudantium modi.</div>
+                </div>
             </div>
-                        <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ourinvestingexpert" aria-expanded="false" aria-controls="flush-collapseTwo">
                    <p class="lead">
                         Our Investing Expert
                    </p>
                 </button>
                 </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="ourinvestingexpert" class="accordion-collapse collapse" data-bs-parent="#Aboutthisreport">
                 <div class="accordion-body">
                     <div class="container">
                       <div class="row justify-content-center align-items-center g-2">
                         <div class="col-2"><img class="img-fluid img-thumbnail" src="image/moneyexpert.jpg" alt="moneyexpert"></div>
-                        <div class="col-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia temporibus debitis dolore cupiditate adipisci cumque nobis quisquam libero soluta sunt delectus atque magnam officiis in magni nostrum, pariatur iste tempore.                          
+                        <div class="col-10">
+                            <div class="d-flex flex-column">
+                            <div class="text-dark"><h3>Lorem, ipsum.</h3></div>
+                            <div class="text-secondary"><h4>Lorem, ipsum.</h4></div>
+                            <div class=""><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia temporibus debitis dolore cupiditate adipisci cumque nobis quisquam libero soluta sunt delectus atque magnam officiis in magni nostrum, pariatur iste tempore.
+                                <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto officia, blanditiis rerum unde sapiente corrupti iste. Mollitia veniam delectus sit maiores enim!
+                            </p></div>                          
+                        </div>
                         </div>                        
                     </div>
                     </div>
                 </div>
             </div>
-
+            </div>
+            </div>
+            </div>
 </section>
-            <h1 class="mt-3">Investment Calculator</h1>
+            <div class="container my-3 p-5 bg-white shadow-sm">
+            <h2>Investment Calculator</h2>
 
-            <picture class="w-50 float-start mt-0 p-3">
+            <picture class="w-50 float-start me-3">
                 <img src="image/building.jpg" class="img-fluid rounded w-100">
                 <!-- <figcaption class="figure-caption text-center">Visible text.</figcaption> -->
             </picture>
 
-            <p class="mt-4 ms-3"> <strong>Fugiat consequat</strong> aliquip amet deserunt eu aute consequat. Aliquip do
+            <p class=""> <h3>Fugiat consequat</h3> aliquip amet deserunt eu aute consequat. Aliquip do
                 deserunt elit
                 tempor sit
                 exercitation do amet excepteur commodo fugiat qui dolore. Cillum consectetur tempor ad proident
@@ -302,7 +387,8 @@
                 fugiat minim ad minim exercitation do aliquip id sunt mollit ad veniam magna. Elit mollit officia
                 voluptate labore id proident sit ut aliquip. Id commodo exercitation labore pariatur culpa aute
                 deserunt mollit mollit dolore anim ipsum dolore.
-                <br>
+                <br><br>
+                <h3>How Investing Works</h3>
                 Eiusmod velit labore est voluptate duis laboris cupidatat aliqua. Proident sit in pariatur ad
                 officia voluptate enim aute. Consectetur laboris adipisicing voluptate cillum proident esse ea ea
                 tempor enim. Elit laborum consectetur exercitation ea irure consequat est cupidatat officia.
@@ -314,6 +400,16 @@
                 voluptate culpa ipsum. Proident reprehenderit reprehenderit sunt ex mollit cupidatat est ad officia
                 sit. Sunt ut consectetur ipsum mollit aute ad occaecat aliquip laborum.
                 <br>
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae omnis impedit, incidunt iste fugit inventore!
+
+                <ul>
+                    <li class="my-3"><strong> Lorem, ipsum</strong> dolor sit amet consectetur adipisicing elit. Blanditiis impedit atque laborum recusandae corrupti ratione deserunt perspiciatis pariatur, reiciendis odio.</li>
+                    <li class="mb-3"><strong> Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Praesentium, error!</li>
+                    <li class="mb-3"><strong> Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Cumque velit aspernatur rem consequuntur a, quibusdam minus maiores, doloribus saepe id, ducimus neque. Corrupti nam repudiandae inventore cumque repellat? Itaque, in.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat illo dolor ut?</li>
+                </ul>
+            
                 Dolore commodo adipisicing consectetur ex magna et tempor qui sint cupidatat nisi laboris officia.
                 Eiusmod mollit velit irure eiusmod occaecat pariatur. Occaecat aliquip aliquip ea excepteur nisi.
                 Veniam esse excepteur et laboris fugiat laborum pariatur dolor Lorem sint in occaecat magna. Fugiat
@@ -338,7 +434,8 @@
                 mollit reprehenderit pariatur. Consequat dolore mollit voluptate in sunt sunt excepteur do magna
                 esse.</p>
         </div>
-
+        </div>
+</div>
         <div class=" footer py-3 mt-3">
             <div class="container-fluid">
                 <div class="d-flex flex-row justify-content-evenly align-items-center flex-wrap mt-3">
@@ -404,7 +501,99 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
+        <script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
+			integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
         <script src="https://kit.fontawesome.com/92ec45c925.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>	
+        
+        <!-- chart.js -->
+        <script>                  
+			const ctx = document.getElementById("investmentbarchart");
+			new Chart(ctx, {
+				type: "bar",
+				data: {
+					labels: [
+						"2023",
+						"2024",
+						"2025",
+						"2026",
+						"2027",
+						"2028",
+						"2029",
+						"2030",
+						"2031",
+						"2032",
+					],
+					datasets: [
+						{
+							label: "Starting Ammount",
+							backgroundColor: "#855CF8",
+							data: [
+								5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000,
+							],
+							borderWidth: 1,
+						},
+						{
+							label: "Total Contribution",
+							backgroundColor: "#1D1314",
+							data: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+							borderWidth: 1,
+						},
+						{
+							label: "Total Interest Earned",
+							backgroundColor: "#FFD1AD",
+							data: [200, 412, 636, 874, 1125, 1390, 1669, 1964, 2275, 2602],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+                    plugins: {
+                        legend: {
+                            position: "bottom",
+                        }
+                    },
+					scales: {
+						x: {
+							stacked: true,
+						},
+						y: {
+							stacked: true,
+						},
+					},
+				},
+			});
+		</script>
+        <script>
+            const ctp = document.getElementById("investmentpiechart");
+            new Chart(ctp, {
+                type: "pie",
+                data: {
+                    labels: ["Starting Contribution", "Total Contribution", "Total Interest Earned"],
+                    datasets: [{
+                        labels: ["Starting Contribution","Total Contribution", "Total Interest Earned"],
+                        data: [5000,1000,2602],
+                        backgroundColor: [
+                        "#855CF8",
+                        "#1D1314",
+                        "#FFD1AD"
+                        ]
+                    }],
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            position: "bottom",
+                        }
+                    }
+                },
+                
+            })
+        </script>
 </body>
 
 </html>

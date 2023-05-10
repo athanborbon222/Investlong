@@ -70,6 +70,7 @@
 
 /*trending Stories*/
 .trend-cards {
+	border-radius: 0px 0px;
 	box-shadow: 0px 2px 2px 1px rgb(74, 73, 73);
 }
 

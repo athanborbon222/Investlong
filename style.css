@@ -1,6 +1,25 @@
 /* font awesome */
-.fa-brands {
-	color: blue;
+.social-media-container{
+	
+}
+
+
+.fa-twitter-square {
+	color: rgb(99, 193, 237);
+	font-size: xx-large;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.fa-facebook {
+	color: rgb(80, 78, 240);
+	font-size: xx-large;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.fa-linkedin {
+	color: rgb(13, 119, 168);
 	font-size: xx-large;
 	font-weight: bolder;
 	text-decoration: none;
@@ -17,6 +36,17 @@
 	background-color: rgb(255, 140, 0);
 	color: white;
 
+	padding: 8px 8px 8px 8px;
+	border-radius: 10px;
+
+	text-decoration: none;
+}
+
+
+.register-btn{
+	background-color: #139aff;
+	color: white;
+	
 	padding: 8px 8px 8px 8px;
 	border-radius: 10px;
 
@@ -66,6 +96,8 @@
 	padding: 10px 10px 10px 10px;
 	border-radius: 20px;
 }
+
+
 
 /* end of trending stories */
 
@@ -139,7 +171,8 @@
 
 .data_disclaimer_link,
 .help_link,
-.suggestion_link {
+.suggestion_link,
+.event_pagination {
 	text-decoration: none;
 
 	color: #9d9595;
@@ -206,6 +239,9 @@
 	border: 1px solid rgb(240, 240, 240);
 }
 
+.top3-category{
+	background-color: rgb(255, 140, 0);
+}
 /* Contributors Section CSS */
 .search {
 	width: 25%;
@@ -239,6 +275,9 @@ body {
 
 .bg-dirtywhite {
 	background-color: #EDEDED;
+}
+.bg-lightblue{
+	background-color: #139aff;
 }
 
 .btn-danger {
